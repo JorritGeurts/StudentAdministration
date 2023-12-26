@@ -14,9 +14,7 @@ use App\Livewire\CoursesOverview;
 |
 */
 
-Route::get('/', function () {
-    return view('homepage');
-});
+
 Route::view('/','homepage')->name('homepage');
 
 Route::get('courses-overview',CoursesOverview::class)->name('courses-overview');
