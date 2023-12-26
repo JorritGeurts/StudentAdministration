@@ -7,9 +7,9 @@ use Livewire\Component;
 
 class CoursesOverview extends Component
 {
-    #[Layout('layouts.studentadministration-layout',['title'=>'Courses overview','description'=>'Here you will find an overview from our courses'])]
+    #[Layout('layouts.studentadministration',['title'=>'Courses overview','description'=>'Here you will find an overview from our courses'])]
     public function render()
     {
-        return view('livewire.courses-overview');
+        return view('livewire.course');
     }
 }
