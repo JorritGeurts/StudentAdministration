@@ -2,15 +2,14 @@
 
 namespace App\Livewire;
 
-use Livewire\Component;
 use Livewire\Attributes\Layout;
+use Livewire\Component;
 
 class CoursesOverview extends Component
 {
-
     #[Layout('layouts.studentadministration',['title'=>'Courses overview','description'=>'Here you will find an overview from our courses'])]
     public function render()
     {
-        return view('livewire.courses-overview');
+        return view('livewire.course');
     }
 }
