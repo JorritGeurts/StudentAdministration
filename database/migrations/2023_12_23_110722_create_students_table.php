@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('students', function (Blueprint $table) {
+        Schema::create('student', function (Blueprint $table) {
             $table->id();
             $table->foreignId('programme_id')->constrained()->onDelete('cascade')->onUpdate('cascade');
             $table->integer('student_number');
@@ -20,7 +20,7 @@ return new class extends Migration
             $table->timestamps();
         });
 
-        DB::table('students')->insert(
+        DB::table('student')->insert(
             [
                 [
                     'programme_id' => 1,
@@ -49,6 +49,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('students');
+        Schema::dropIfExists('student');
     }
 };

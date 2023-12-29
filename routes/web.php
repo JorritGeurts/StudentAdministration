@@ -17,12 +17,14 @@ use App\Livewire\CoursesOverview;
 
 Route::view('/','homepage')->name('homepage');
 
-Route::get('courses-overview',CoursesOverview::class)->name('courses-overview');
+Route::get('course-overview',CoursesOverview::class)->name('course-overview');
 
-Route::get('courses',function(){
+Route::get('course',function(){
     return view('courses');
 });
-Route::view('courses','courses')->name('courses');
+Route::view('course','courses')->name('course');
+
+Route::view('under-construction', 'under-construction')->name('under-construction');
 
 Route::middleware([
     'auth:sanctum',

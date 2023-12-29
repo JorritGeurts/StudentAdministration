@@ -1,3 +1,4 @@
+{{--
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
@@ -13,3 +14,13 @@
         </div>
     </div>
 </x-app-layout>
+--}}
+
+<x-studentadministration-layout>
+    <x-slot name="description">dashboard</x-slot>
+    <x-slot name="title">{{ auth()->user()->name }}'s Dashboard</x-slot>
+
+    <x-tmk.section>
+        <x-welcome/>
+    </x-tmk.section>
+</x-studentadministration-layout>

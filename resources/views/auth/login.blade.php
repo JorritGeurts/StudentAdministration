@@ -1,3 +1,15 @@
+{{--<x-studentadministration-layout>
+    <x-slot name="description">login</x-slot>
+    <x-slot name="title">Login</x-slot>
+
+    <x-tmk.section class="grid grid-cols-1 max-w-md m-auto">
+        --}}{{-- show validation errors --}}{{--
+        <x-validation-errors class="mb-4"/>
+        --}}{{-- login form --}}{{--
+        <form method="POST" action="{{ route('login') }}">  ... </form>
+    </x-tmk.section>
+</x-studentadministration-layout>--}}
+
 <x-guest-layout>
     <x-authentication-card>
         <x-slot name="logo">
@@ -7,7 +19,7 @@
         <x-validation-errors class="mb-4" />
 
         @if (session('status'))
-            <div class="mb-4 font-medium text-sm text-green-600">
+            <div class="mb-4 font-bold text-sm text-red-600">
                 {{ session('status') }}
             </div>
         @endif

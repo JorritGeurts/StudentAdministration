@@ -7,7 +7,6 @@
     <meta name="description" content="{{ $description ?? 'Welcome to the Student Administration Application' }}">
     <title>{{ $title ?? 'Student Administration' }}</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
->>>>>>> c3310b07ed72429419bb4917a0113b0d6ea74a78
     @livewireStyles
 </head>
 <body class="font-sans antialiased">
